@@ -4,13 +4,11 @@ input {
 .abside{
   width: 40%;
   aspect-ratio: 1;
-  margin-right: 0;
+  margin-right: 2rem;
   padding-top: 50px;
   position: fixed;
-  right: 30%;
+  right: 55%;
   z-index: 1001;
-  position: relative;
-  left: 0;
 }
 #sign-up {
   height: 100vh;
@@ -31,6 +29,7 @@ input {
   border-radius: 1rem;
   z-index: 1;
   margin-bottom: 9rem;
+  left: 70%;
 }
 
 .container::before {
@@ -55,8 +54,7 @@ input {
 }
 
 .form-none{
-  position: relative;
-  left: 0;
+  display: none;
 }
 
 form{
@@ -65,6 +63,7 @@ form{
   padding: 2rem 0;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgb(33 33 33 / 60%);
+
 }
 
 .group {
@@ -157,16 +156,42 @@ form{
 }
 
 @media screen and (max-width: 700px){
+  .abside{
+    width: 75%;
+    margin-left: 0;
+    margin-right: 3.5rem;
+  }
+  #sign-up{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 10rem;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
   .container::before{
       height: 10rem;
   }
   .heading {
-      left: 50%;
+      left: 55%;
+      top: 1rem;
       transform: translateX(-50%);
+      font-size: 2.5rem;
   }
   form {
       transform: initial;
       border-radius: initial;
       box-shadow: none;
+      width: max-content;
+      margin: 0;
+      padding: 0;
+      margin-top: 3rem;
   }
+
 }

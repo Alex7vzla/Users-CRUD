@@ -29,9 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <Button 
-      handleOpenForm={handleOpenForm}
-      />
+      <Button handleOpenForm={handleOpenForm}/>
       <div className='abside'>
         <div className={isFormOpen ? 'form-container' : 'form-none'}>
           <Form 
